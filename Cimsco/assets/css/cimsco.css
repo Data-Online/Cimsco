@@ -1,0 +1,13 @@
+﻿a.cimscologo {
+    background: url('../img/cimsco-logoA.png') no-repeat top left;    
+    display: block;
+    height: 70px;
+    text-indent: -9999px; /* hides the link text */
+}
+
+a.cimscologo-lg-cn {
+    background: url('../img/cimsco-logo.png') no-repeat center;    
+    display: block;
+    height: 100px;
+    text-indent: -9999px; /* hides the link text */
+}

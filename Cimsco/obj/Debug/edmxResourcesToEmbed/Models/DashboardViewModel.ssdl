@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SummaryData">
+    <Key>
+      <PropertyRef Name="SummaryDataId" />
+    </Key>
+    <Property Name="SummaryDataId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="date" />
+    <Property Name="Value1" Type="decimal" Precision="6" Scale="2" />
+    <Property Name="Value2" Type="decimal" Precision="6" Scale="2" />
+    <Property Name="Value3" Type="decimal" Precision="6" Scale="2" />
+    <Property Name="Value4" Type="decimal" Precision="6" Scale="2" />
+    <Property Name="Value5" Type="decimal" Precision="6" Scale="2" />
+    <Property Name="CustomerId" Type="int" />
+  </EntityType>
+  <Association Name="FK_SummaryData_Customers">
+    <End Role="Customers" Type="Self.Customers" Multiplicity="0..1" />
+    <End Role="SummaryData" Type="Self.SummaryData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="SummaryData">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SummaryData" EntityType="Self.SummaryData" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_SummaryData_Customers" Association="Self.FK_SummaryData_Customers">
+      <End Role="Customers" EntitySet="Customers" />
+      <End Role="SummaryData" EntitySet="SummaryData" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

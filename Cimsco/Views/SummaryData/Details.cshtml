@@ -1,0 +1,74 @@
+﻿@model Cimsco.Models.SummaryData
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SummaryData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Value5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Value5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SummaryDataId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

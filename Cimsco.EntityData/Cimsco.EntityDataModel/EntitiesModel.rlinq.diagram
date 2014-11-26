@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityDiagrams>
+  <entityDiagramsDiagram dslVersion="2.0.0.0" absoluteBounds="0, 0, 11, 11.625" name="CimscoModel" isDefault="true">
+    <DomainModelMoniker name="/CimscoModel" />
+    <nestedChildShapes>
+      <classShape Id="2287ac33-69c3-4a3b-8f70-69766ca2cbcb" absoluteBounds="5.75, 0.75, 1.5, 2.9165804036458329">
+        <DomainClassMoniker name="/CimscoModel/SummaryDatum" />
+        <nestedChildShapes>
+          <elementListCompartment Id="2f36b2bf-1214-4ec5-a5ad-96d0ba959f5d" absoluteBounds="5.765, 1.2599999999999998, 1.4700000000000002, 1.7878011067708333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="059c977e-205a-435d-b51d-7db497709f9e" absoluteBounds="5.765, 3.0578011067708331, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="1b3e89c9-c041-4648-9572-9851e684ef5f" absoluteBounds="5.765, 3.3171907552083333, 1.4700000000000002, 0.2493896484375" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+        </nestedChildShapes>
+      </classShape>
+      <classShape Id="44ef3da6-6ddf-437c-b6b5-4fb287254cbd" absoluteBounds="3, 1, 1.5, 4.262690429687499">
+        <DomainClassMoniker name="/CimscoModel/AspNetUser" />
+        <nestedChildShapes>
+          <elementListCompartment Id="d0b1284e-7bdf-4235-a048-fbb3db7f2681" absoluteBounds="3.015, 1.5099999999999998, 1.4700000000000002, 2.5570068359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="af5f155e-43b4-47a1-87e9-69dc42ef0a22" absoluteBounds="3.015, 4.0770068359375, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="46625a67-0b3e-4bfe-b559-3195f9c13e30" absoluteBounds="3.015, 4.3363964843749994, 1.4700000000000002, 0.8262939453125" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+        </nestedChildShapes>
+      </classShape>
+      <classShape Id="a57e1cc8-d334-4d61-8640-95d66ee47396" absoluteBounds="0.75, 2.125, 1.5, 2.1473746744791669">
+        <DomainClassMoniker name="/CimscoModel/AspNetUserLogin" />
+        <nestedChildShapes>
+          <elementListCompartment Id="30feded5-c672-4766-818b-2b3da8fef13a" absoluteBounds="0.76500000000000012, 2.635, 1.4700000000000002, 0.8262939453125" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="a7e59f33-07dd-4d77-a451-44b032a32f30" absoluteBounds="0.76500000000000012, 3.4712939453125, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="d80a9a01-ac96-4f63-838d-bf9f8c63a5c1" absoluteBounds="0.76500000000000012, 3.7306835937500002, 1.4700000000000002, 0.44169108072916674" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+        </nestedChildShapes>
+      </classShape>
+      <classShape Id="4520748e-eeab-4692-a435-08e0b7bb0a5a" absoluteBounds="0.75, 6.25, 1.5, 2.3396761067708329">
+        <DomainClassMoniker name="/CimscoModel/AspNetUserClaim" />
+        <nestedChildShapes>
+          <elementListCompartment Id="12a2b878-227c-4b05-b59d-cfd8a5c0be10" absoluteBounds="0.765, 6.76, 1.4700000000000002, 1.0185953776041665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="02aa1af3-8af9-479e-88f2-199397771dcc" absoluteBounds="0.765, 7.7885953776041665, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="7cf2964d-5daa-4343-9719-7cce95c14947" absoluteBounds="0.765, 8.0479850260416654, 1.4700000000000002, 0.44169108072916674" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+        </nestedChildShapes>
+      </classShape>
+      <classShape Id="326c2289-0db5-4b54-9b30-a2652d7f930c" absoluteBounds="0.75, 9.375, 1.5, 1.955073242187499">
+        <DomainClassMoniker name="/CimscoModel/AspNetRole" />
+        <nestedChildShapes>
+          <elementListCompartment Id="a7f9247a-a6dc-4202-926a-6c4a3902c09e" absoluteBounds="0.765, 9.885, 1.4700000000000002, 0.63399251302083326" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="af5f2d3e-9824-46e6-8c00-b57f2f5ca245" absoluteBounds="0.765, 10.528992513020834, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="0f72e404-08aa-42cd-bf48-1edad8138eec" absoluteBounds="0.765, 10.788382161458333, 1.4700000000000002, 0.44169108072916652" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+        </nestedChildShapes>
+      </classShape>
+      <classShape Id="f182c5f7-7c37-40d5-a3b8-8cfb0e50ffab" absoluteBounds="5.75, 4.75, 1.5, 2.1473746744791669">
+        <DomainClassMoniker name="/CimscoModel/__MigrationHistory" />
+        <nestedChildShapes>
+          <elementListCompartment Id="3b6ec2b1-969f-45c5-9237-f57fa455fb1f" absoluteBounds="5.7650000000000006, 5.26, 1.4700000000000002, 1.0185953776041665" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="38b989f9-57ed-471f-bea1-f542bd71a078" absoluteBounds="5.7650000000000006, 6.2885953776041665, 1.4700000000000002, 0.2493896484375" name="ImplementationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+          <elementListCompartment Id="a2b9ace1-fbc5-4821-9f73-1b0252582c12" absoluteBounds="5.7650000000000006, 6.5479850260416663, 1.4700000000000002, 0.2493896484375" name="NavigationCompartment" titleTextColor="Black" itemTextColor="Black" />
+        </nestedChildShapes>
+      </classShape>
+      <associationConnector edgePoints="[(2.25 : 3.19868733723958); (3 : 3.19868733723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+        <AssociationMoniker Id="4071d38d-2fd7-428a-9146-9e833ee62bc1" />
+        <relativeChildShapes />
+        <nodes>
+          <classShapeMoniker Id="a57e1cc8-d334-4d61-8640-95d66ee47396" />
+          <classShapeMoniker Id="44ef3da6-6ddf-437c-b6b5-4fb287254cbd" />
+        </nodes>
+      </associationConnector>
+      <associationConnector edgePoints="[(2.25 : 7.41983805338542); (3.26041416666667 : 7.41983805338542 : JumpStart); (3.42708083333333 : 7.41983805338542 : JumpEnd); (3.75 : 7.41983805338542); (3.75 : 5.2626904296875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+        <AssociationMoniker Id="9a24e357-0bf3-4bae-8ed1-0932797eb029" />
+        <relativeChildShapes />
+        <nodes>
+          <classShapeMoniker Id="4520748e-eeab-4692-a435-08e0b7bb0a5a" />
+          <classShapeMoniker Id="44ef3da6-6ddf-437c-b6b5-4fb287254cbd" />
+        </nodes>
+      </associationConnector>
+      <associationConnector edgePoints="[(2.25 : 10.3525366210937); (3.3437475 : 10.3525366210937); (3.3437475 : 5.2626904296875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+        <AssociationMoniker Id="6db567e6-c225-4392-872f-c713b71d8322" />
+        <relativeChildShapes />
+        <nodes>
+          <classShapeMoniker Id="326c2289-0db5-4b54-9b30-a2652d7f930c" />
+          <classShapeMoniker Id="44ef3da6-6ddf-437c-b6b5-4fb287254cbd" />
+        </nodes>
+      </associationConnector>
+    </nestedChildShapes>
+  </entityDiagramsDiagram>
+</EntityDiagrams>

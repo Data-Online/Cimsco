@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jsrender.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.easing-1.3.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.globalize.min.js")"></script>
+
+    <!-- CSS -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/assets/css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/assets/css/cimsco.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- added code to apply skin -->
+    <link href="~/assets/css/skins/slategray.css" rel="stylesheet" type="text/css">
+    <!-- end added code to apply skin -->
+    <!--[if lte IE 9]>
+            <link href="~/assets/css/main-ie.css" rel="stylesheet" type="text/css" media="screen" />
+            <link href="~/assets/css/main-ie-part2.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/assets/ico/Cimsco-favicon144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/assets/ico/Cimsco-favicon114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/assets/ico/Cimsco-favicon72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="~/assets/ico/Cimsco-favicon57x57.png">
+    <link rel="shortcut icon" href="~/assets/ico/favicon.png">
+
+</head>
+<body>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>*@
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer class="footer">&copy; 2014 Cimsco Ltd</footer>
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+    @Html.EJ().ScriptManager()
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(function () {
+            $('#page').css("min-height", $(document).height());
+        });
+    </script>
+
+</body>
+</html>

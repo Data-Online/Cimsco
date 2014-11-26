@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SummaryData">
+    <Key>
+      <PropertyRef Name="SummaryDataId" />
+    </Key>
+    <Property Name="SummaryDataId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="Value1" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="Value2" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="Value3" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="Value4" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="Value5" Type="Decimal" Precision="6" Scale="2" />
+    <Property Name="CustomerId" Type="Int32" />
+    <NavigationProperty Name="Customer" Relationship="Model.FK_SummaryData_Customers" FromRole="SummaryData" ToRole="Customer" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SummaryData" EntityType="Self.SummaryData" />
+    <EntitySet Name="Customers" EntityType="Model.Customer" />
+    <AssociationSet Name="FK_SummaryData_Customers" Association="Model.FK_SummaryData_Customers">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="SummaryData" EntitySet="SummaryData" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerId" />
+    </Key>
+    <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SummaryDatas" Relationship="Model.FK_SummaryData_Customers" FromRole="Customer" ToRole="SummaryData" />
+  </EntityType>
+  <Association Name="FK_SummaryData_Customers">
+    <End Type="Model.Customer" Role="Customer" Multiplicity="0..1" />
+    <End Type="Model.SummaryData" Role="SummaryData" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CustomerId" />
+      </Principal>
+      <Dependent Role="SummaryData">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="SummaryData">
+      <EntityTypeMapping TypeName="Model.SummaryData">
+        <MappingFragment StoreEntitySet="SummaryData">
+          <ScalarProperty Name="SummaryDataId" ColumnName="SummaryDataId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Value1" ColumnName="Value1" />
+          <ScalarProperty Name="Value2" ColumnName="Value2" />
+          <ScalarProperty Name="Value3" ColumnName="Value3" />
+          <ScalarProperty Name="Value4" ColumnName="Value4" />
+          <ScalarProperty Name="Value5" ColumnName="Value5" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Model.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

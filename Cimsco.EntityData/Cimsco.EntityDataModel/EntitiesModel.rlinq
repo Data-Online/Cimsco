@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="CimscoModel" namespace="Cimsco.EntityDataModel" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="CimscoModel" backend="mssql" default-schema="dbo" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="Cimsco.EntityDataModel" default="true">
+      <orm:class name="SummaryDatum" uniqueId="7492d645-d93c-42cf-be7b-ef6522ba8510">
+        <orm:table name="SummaryData" />
+        <orm:identity>
+          <orm:single-field field-name="_summaryDataId" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_summaryDataId" property="SummaryDataId" behavior="readwrite" uniqueId="a9a43ac5-09d8-4423-bbb7-5c85db3003b0" type="System.Int32">
+          <orm:column name="SummaryDataId" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_date" property="Date" behavior="readwrite" uniqueId="1caf1954-f2bf-446a-936a-dc85e0b1c5e4" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Date" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_value1" property="Value1" behavior="readwrite" uniqueId="c2761475-b7d9-4420-9023-f4afdb535af7" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Value1" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_value2" property="Value2" behavior="readwrite" uniqueId="59d776f5-bc14-4278-b03a-a0251a141850" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Value2" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_value3" property="Value3" behavior="readwrite" uniqueId="7656625e-076d-4a8c-b727-61d499b98011" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Value3" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_value4" property="Value4" behavior="readwrite" uniqueId="b1000338-5d07-4b18-bbd8-bdeb3f39e4d0" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Value4" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_value5" property="Value5" behavior="readwrite" uniqueId="5510166a-2dff-46a1-bee9-1bedc382e6a5" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Value5" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_customerId" property="CustomerId" behavior="readwrite" uniqueId="e9a47c7b-7433-48e9-9797-ee89163cec2b" type="System.String">
+          <orm:column name="CustomerId" sql-type="nvarchar" nullable="true" length="128" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="AspNetUser" uniqueId="148b78fb-00a3-4763-91f2-28a0d257e271">
+        <orm:table name="AspNetUsers" />
+        <orm:identity>
+          <orm:single-field field-name="_id" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_id" property="Id" behavior="readwrite" uniqueId="22cc0794-2f48-4e5a-a424-c74e49e3c9e8" type="System.String">
+          <orm:column name="Id" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_email" property="Email" behavior="readwrite" uniqueId="45366d2b-35d5-4eb1-80df-444d611c0069" type="System.String">
+          <orm:column name="Email" sql-type="nvarchar" nullable="true" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_emailConfirmed" property="EmailConfirmed" behavior="readwrite" uniqueId="a4cedd44-6d69-41a7-8e79-e22392e57daf" type="System.Boolean">
+          <orm:column name="EmailConfirmed" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_passwordHash" property="PasswordHash" behavior="readwrite" uniqueId="3c853ffc-1d4a-468e-9207-d916e06bfbd5" type="System.String">
+          <orm:column name="PasswordHash" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        </orm:field>
+        <orm:field name="_securityStamp" property="SecurityStamp" behavior="readwrite" uniqueId="7bec72c6-3138-4264-9a28-efdb7b591821" type="System.String">
+          <orm:column name="SecurityStamp" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        </orm:field>
+        <orm:field name="_phoneNumber" property="PhoneNumber" behavior="readwrite" uniqueId="f532857d-aaf2-493d-bb85-7a09dc20453b" type="System.String">
+          <orm:column name="PhoneNumber" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        </orm:field>
+        <orm:field name="_phoneNumberConfirmed" property="PhoneNumberConfirmed" behavior="readwrite" uniqueId="09aadadb-0a59-441f-8b69-1219c5ea7c8b" type="System.Boolean">
+          <orm:column name="PhoneNumberConfirmed" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_twoFactorEnabled" property="TwoFactorEnabled" behavior="readwrite" uniqueId="b8a16df0-277e-4452-a2e1-c11041a3730d" type="System.Boolean">
+          <orm:column name="TwoFactorEnabled" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_lockoutEndDateUtc" property="LockoutEndDateUtc" behavior="readwrite" uniqueId="29f86d8c-1756-4960-870d-65718434b0a2" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="LockoutEndDateUtc" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_lockoutEnabled" property="LockoutEnabled" behavior="readwrite" uniqueId="d7f4ddf6-fb75-4959-b5f2-83cf93b2f0c7" type="System.Boolean">
+          <orm:column name="LockoutEnabled" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_accessFailedCount" property="AccessFailedCount" behavior="readwrite" uniqueId="3e1fa7af-661e-4d10-bcf2-65828a12a242" type="System.Int32">
+          <orm:column name="AccessFailedCount" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="a2dc1d2a-2882-473d-a611-b57693d14186" type="System.String">
+          <orm:column name="UserName" sql-type="nvarchar" nullable="false" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_aspNetUserLogins" property="AspNetUserLogins" behavior="readwrite" uniqueId="24bb6627-23c7-4c01-820f-c34061e87b6f" type="Cimsco.EntityDataModel.AspNetUserLogin">
+          <orm:collection element-class="Cimsco.EntityDataModel.AspNetUserLogin" inverse-field="_aspNetUser" order-by="" uniqueId="4071d38d-2fd7-428a-9146-9e833ee62bc1" />
+        </orm:field>
+        <orm:field name="_aspNetUserClaims" property="AspNetUserClaims" behavior="readwrite" uniqueId="78acefa4-aaf7-415d-b1fc-2d344cf21a77" type="Cimsco.EntityDataModel.AspNetUserClaim">
+          <orm:collection element-class="Cimsco.EntityDataModel.AspNetUserClaim" inverse-field="_aspNetUser" order-by="" uniqueId="9a24e357-0bf3-4bae-8ed1-0932797eb029" />
+        </orm:field>
+        <orm:field name="_aspNetRoles" property="AspNetRoles" behavior="readwrite" uniqueId="d49bce7b-185c-4a47-a51b-ab33e5ac6223" type="Cimsco.EntityDataModel.AspNetRole">
+          <orm:collection element-class="Cimsco.EntityDataModel.AspNetRole" inverse-field="_aspNetUsers" order-by="" uniqueId="6db567e6-c225-4392-872f-c713b71d8322" />
+        </orm:field>
+        <orm:index name="UserNameIndex" unique="true">
+          <orm:columnMapping>
+            <orm:column name="UserName" sql-type="nvarchar" nullable="false" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="AspNetUserLogin" uniqueId="5b5d3f28-5738-46f8-94f6-35a4c0f50130">
+        <orm:table name="AspNetUserLogins" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_loginProvider" />
+            <orm:single-field field-name="_providerKey" />
+            <orm:single-field field-name="_userId" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_loginProvider" property="LoginProvider" behavior="readwrite" uniqueId="00dcdabb-fc7e-4d53-b3f5-5e35850a00d5" type="System.String">
+          <orm:column name="LoginProvider" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_providerKey" property="ProviderKey" behavior="readwrite" uniqueId="23725f47-8959-4996-803b-de2bb5a6c296" type="System.String">
+          <orm:column name="ProviderKey" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_userId" property="UserId" behavior="readwrite" uniqueId="8a8ba805-4edc-4778-97e6-33bd8fb7fc3e" type="System.String">
+          <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_aspNetUser" property="AspNetUser" behavior="readwrite" uniqueId="5ebe14bd-0c91-4219-b2ce-b89e37930976" type="Cimsco.EntityDataModel.AspNetUser">
+          <orm:reference uniqueId="4071d38d-2fd7-428a-9146-9e833ee62bc1" association-name="AspNetUserLoginHasAspNetUser">
+            <orm:sharedfield name="_userId" target-class="Cimsco.EntityDataModel.AspNetUser" target-field="_id" />
+            <orm:constraint name="FK_dbo.AspNetUserLogins_dbo.AspNetUsers_UserId" delete-action="cascade" destination-table="AspNetUsers" />
+          </orm:reference>
+        </orm:field>
+        <orm:index name="IX_UserId">
+          <orm:columnMapping>
+            <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="AspNetUserClaim" uniqueId="3a79692f-3aa3-4523-8b4d-37a0dd9d6921">
+        <orm:table name="AspNetUserClaims" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="Id" />
+          </orm:key-generator>
+          <orm:single-field field-name="_id" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_id" property="Id" behavior="readwrite" uniqueId="3c453a40-f8f4-425a-ab56-d94e9c4bdad6" type="System.Int32">
+          <orm:column name="Id" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_userId" property="UserId" behavior="readwrite" uniqueId="4a1523dd-649f-4d64-a001-70dc9d31371c" type="System.String">
+          <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_claimType" property="ClaimType" behavior="readwrite" uniqueId="15485c18-4731-4963-a766-8312c976d8cd" type="System.String">
+          <orm:column name="ClaimType" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        </orm:field>
+        <orm:field name="_claimValue" property="ClaimValue" behavior="readwrite" uniqueId="b7cfaa81-531a-4292-88b4-2108d6e657a6" type="System.String">
+          <orm:column name="ClaimValue" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        </orm:field>
+        <orm:field name="_aspNetUser" property="AspNetUser" behavior="readwrite" uniqueId="98f34268-e16e-4c24-8acb-17881d16cd76" type="Cimsco.EntityDataModel.AspNetUser">
+          <orm:reference uniqueId="9a24e357-0bf3-4bae-8ed1-0932797eb029" association-name="AspNetUserClaimHasAspNetUser">
+            <orm:sharedfield name="_userId" target-class="Cimsco.EntityDataModel.AspNetUser" target-field="_id" />
+            <orm:constraint name="FK_dbo.AspNetUserClaims_dbo.AspNetUsers_UserId" delete-action="cascade" destination-table="AspNetUsers" />
+          </orm:reference>
+        </orm:field>
+        <orm:index name="IX_UserId">
+          <orm:columnMapping>
+            <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="AspNetRole" uniqueId="8a66ac02-ba16-4622-9a9e-5dc9588eda4f">
+        <orm:table name="AspNetRoles" />
+        <orm:identity>
+          <orm:single-field field-name="_id" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_id" property="Id" behavior="readwrite" uniqueId="ea607622-6d1c-4783-a185-0d6cccb73d23" type="System.String">
+          <orm:column name="Id" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_name" property="Name" behavior="readwrite" uniqueId="b1a571b2-a85e-4ceb-9f89-3edb02f69dba" type="System.String">
+          <orm:column name="Name" sql-type="nvarchar" nullable="false" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_aspNetUsers" property="AspNetUsers" behavior="readwrite" uniqueId="4486515a-0105-470c-b04c-1a4a92846777" type="Cimsco.EntityDataModel.AspNetUser">
+          <orm:join-table uniqueId="6db567e6-c225-4392-872f-c713b71d8322" association-name="AspNetRolesHaveAspNetUsers">
+            <orm:table name="AspNetUserRoles" join-table="true" />
+            <orm:owner>
+              <orm:constraint name="FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId" delete-action="cascade" destination-table="AspNetRoles">
+                <orm:column name="RoleId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" target-class="Cimsco.EntityDataModel.AspNetRole" target-field="_id" />
+              </orm:constraint>
+            </orm:owner>
+            <orm:value>
+              <orm:constraint name="FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId" delete-action="cascade" destination-table="AspNetUsers">
+                <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" target-class="Cimsco.EntityDataModel.AspNetUser" target-field="_id" />
+              </orm:constraint>
+            </orm:value>
+          </orm:join-table>
+        </orm:field>
+        <orm:index name="RoleNameIndex" unique="true">
+          <orm:columnMapping>
+            <orm:column name="Name" sql-type="nvarchar" nullable="false" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:class>
+      <orm:class name="__MigrationHistory" uniqueId="6a2d9621-9431-445a-babb-8cd0bfa5b83c">
+        <orm:table name="__MigrationHistory" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_migrationId" />
+            <orm:single-field field-name="_contextKey" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_migrationId" property="MigrationId" behavior="readwrite" uniqueId="ae9041fc-7e80-416d-8baf-53678dc303a8" type="System.String">
+          <orm:column name="MigrationId" sql-type="nvarchar" nullable="false" length="150" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_contextKey" property="ContextKey" behavior="readwrite" uniqueId="5db2fc49-08c6-4b60-9142-32422b930919" type="System.String">
+          <orm:column name="ContextKey" sql-type="nvarchar" nullable="false" length="300" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_model" property="Model" behavior="readwrite" uniqueId="00101d7b-a966-426e-a849-dbdbbec6d7c3" type="System.Byte[]">
+          <orm:column name="Model" sql-type="varbinary(max)" nullable="false" length="0" scale="0" ado-type="LongVarBinary" />
+        </orm:field>
+        <orm:field name="_productVersion" property="ProductVersion" behavior="readwrite" uniqueId="16ab99b6-5440-4168-9ecd-e8dab2fe5251" type="System.String">
+          <orm:column name="ProductVersion" sql-type="nvarchar" nullable="false" length="32" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="SummaryData">
+        <orm:column name="SummaryDataId" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" />
+        <orm:column name="Date" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="Value1" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="Value2" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="Value3" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="Value4" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="Value5" sql-type="decimal" nullable="true" length="10" scale="2" ado-type="Decimal" />
+        <orm:column name="CustomerId" sql-type="nvarchar" nullable="true" length="128" scale="0" ado-type="UnicodeStringVariableLength" />
+      </orm:table>
+      <orm:table name="AspNetUsers">
+        <orm:column name="Id" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Email" sql-type="nvarchar" nullable="true" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="EmailConfirmed" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="PasswordHash" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        <orm:column name="SecurityStamp" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        <orm:column name="PhoneNumber" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        <orm:column name="PhoneNumberConfirmed" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="TwoFactorEnabled" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="LockoutEndDateUtc" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="LockoutEnabled" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="AccessFailedCount" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="UserName" sql-type="nvarchar" nullable="false" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:index name="UserNameIndex" unique="true">
+          <orm:columnMapping>
+            <orm:column name="UserName" sql-type="nvarchar" nullable="false" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:table>
+      <orm:table name="AspNetUserRoles" join-table="true">
+        <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="RoleId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:index name="IX_RoleId">
+          <orm:columnMapping>
+            <orm:column name="RoleId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:index name="IX_UserId">
+          <orm:columnMapping>
+            <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="FK_dbo.AspNetUserRoles_dbo.AspNetRoles_RoleId" delete-action="cascade" destination-table="AspNetRoles">
+          <orm:column name="RoleId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:constraint>
+        <orm:constraint name="FK_dbo.AspNetUserRoles_dbo.AspNetUsers_UserId" delete-action="cascade" destination-table="AspNetUsers">
+          <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="AspNetUserLogins">
+        <orm:column name="LoginProvider" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="ProviderKey" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:index name="IX_UserId">
+          <orm:columnMapping>
+            <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="FK_dbo.AspNetUserLogins_dbo.AspNetUsers_UserId" delete-action="cascade" destination-table="AspNetUsers">
+          <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="AspNetUserClaims">
+        <orm:column name="Id" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="ClaimType" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        <orm:column name="ClaimValue" sql-type="nvarchar(max)" nullable="true" length="0" scale="0" ado-type="UnicodeStringInfiniteLength" />
+        <orm:index name="IX_UserId">
+          <orm:columnMapping>
+            <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+        <orm:constraint name="FK_dbo.AspNetUserClaims_dbo.AspNetUsers_UserId" delete-action="cascade" destination-table="AspNetUsers">
+          <orm:column name="UserId" sql-type="nvarchar" nullable="false" length="128" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:constraint>
+      </orm:table>
+      <orm:table name="AspNetRoles">
+        <orm:column name="Id" sql-type="nvarchar" nullable="false" length="128" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Name" sql-type="nvarchar" nullable="false" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:index name="RoleNameIndex" unique="true">
+          <orm:columnMapping>
+            <orm:column name="Name" sql-type="nvarchar" nullable="false" length="256" scale="0" ado-type="UnicodeStringVariableLength" />
+          </orm:columnMapping>
+        </orm:index>
+      </orm:table>
+      <orm:table name="__MigrationHistory">
+        <orm:column name="MigrationId" sql-type="nvarchar" nullable="false" length="150" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="ContextKey" sql-type="nvarchar" nullable="false" length="300" scale="0" primary-key="true" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="Model" sql-type="varbinary(max)" nullable="false" length="0" scale="0" ado-type="LongVarBinary" />
+        <orm:column name="ProductVersion" sql-type="nvarchar" nullable="false" length="32" scale="0" ado-type="UnicodeStringVariableLength" />
+      </orm:table>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>Connection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>Data Source=(LocalDb)\v11.0;AttachDbFilename=P:\Projects\Cloud_Development\GitHub\Cimsco\Cimsco\Cimsco\App_Data\aspnet-Cimsco-20141115025400.mdf;Initial Catalog=aspnet-Cimsco-20141115025400;Integrated Security=True</AppConfigConnectionString>
+    <InitialCatalog>aspnet-Cimsco-20141115025400</InitialCatalog>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+      <NavigationPropertyRules />
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings />
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>MsSql</Backend>
+        <ProviderName>System.Data.SqlClient</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="7492d645-d93c-42cf-be7b-ef6522ba8510" name="SummaryDatum" namespace="Cimsco.EntityDataModel" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="a9a43ac5-09d8-4423-bbb7-5c85db3003b0" name="SummaryDataId" type="Int32" label="SummaryDataId : Int32" kind="Persistent" identity="true" fieldName="_summaryDataId" />
+      <Property Id="e9a47c7b-7433-48e9-9797-ee89163cec2b" name="CustomerId" label="CustomerId : String" kind="Persistent" fieldName="_customerId" />
+      <Property Id="1caf1954-f2bf-446a-936a-dc85e0b1c5e4" name="Date" type="DateTime" label="Date : DateTime" nullable="true" kind="Persistent" fieldName="_date" />
+      <Property Id="c2761475-b7d9-4420-9023-f4afdb535af7" name="Value1" type="Decimal" label="Value1 : Decimal" nullable="true" kind="Persistent" fieldName="_value1" />
+      <Property Id="59d776f5-bc14-4278-b03a-a0251a141850" name="Value2" type="Decimal" label="Value2 : Decimal" nullable="true" kind="Persistent" fieldName="_value2" />
+      <Property Id="7656625e-076d-4a8c-b727-61d499b98011" name="Value3" type="Decimal" label="Value3 : Decimal" nullable="true" kind="Persistent" fieldName="_value3" />
+      <Property Id="b1000338-5d07-4b18-bbd8-bdeb3f39e4d0" name="Value4" type="Decimal" label="Value4 : Decimal" nullable="true" kind="Persistent" fieldName="_value4" />
+      <Property Id="5510166a-2dff-46a1-bee9-1bedc382e6a5" name="Value5" type="Decimal" label="Value5 : Decimal" nullable="true" kind="Persistent" fieldName="_value5" />
+    </DomainClass>
+    <DomainClass Id="148b78fb-00a3-4763-91f2-28a0d257e271" name="AspNetUser" namespace="Cimsco.EntityDataModel" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="22cc0794-2f48-4e5a-a424-c74e49e3c9e8" name="Id" label="Id : String" kind="Persistent" identity="true" fieldName="_id" />
+      <Property Id="3e1fa7af-661e-4d10-bcf2-65828a12a242" name="AccessFailedCount" type="Int32" label="AccessFailedCount : Int32" kind="Persistent" fieldName="_accessFailedCount" />
+      <Property Id="45366d2b-35d5-4eb1-80df-444d611c0069" name="Email" label="Email : String" kind="Persistent" fieldName="_email" />
+      <Property Id="a4cedd44-6d69-41a7-8e79-e22392e57daf" name="EmailConfirmed" type="Boolean" label="EmailConfirmed : Boolean" kind="Persistent" fieldName="_emailConfirmed" />
+      <Property Id="d7f4ddf6-fb75-4959-b5f2-83cf93b2f0c7" name="LockoutEnabled" type="Boolean" label="LockoutEnabled : Boolean" kind="Persistent" fieldName="_lockoutEnabled" />
+      <Property Id="29f86d8c-1756-4960-870d-65718434b0a2" name="LockoutEndDateUtc" type="DateTime" label="LockoutEndDateUtc : DateTime" nullable="true" kind="Persistent" fieldName="_lockoutEndDateUtc" />
+      <Property Id="3c853ffc-1d4a-468e-9207-d916e06bfbd5" name="PasswordHash" label="PasswordHash : String" kind="Persistent" fieldName="_passwordHash" />
+      <Property Id="f532857d-aaf2-493d-bb85-7a09dc20453b" name="PhoneNumber" label="PhoneNumber : String" kind="Persistent" fieldName="_phoneNumber" />
+      <Property Id="09aadadb-0a59-441f-8b69-1219c5ea7c8b" name="PhoneNumberConfirmed" type="Boolean" label="PhoneNumberConfirmed : Boolean" kind="Persistent" fieldName="_phoneNumberConfirmed" />
+      <Property Id="7bec72c6-3138-4264-9a28-efdb7b591821" name="SecurityStamp" label="SecurityStamp : String" kind="Persistent" fieldName="_securityStamp" />
+      <Property Id="b8a16df0-277e-4452-a2e1-c11041a3730d" name="TwoFactorEnabled" type="Boolean" label="TwoFactorEnabled : Boolean" kind="Persistent" fieldName="_twoFactorEnabled" />
+      <Property Id="a2dc1d2a-2882-473d-a611-b57693d14186" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="97fd3ed7-63b2-4733-bcf6-9c35a6ef0366">
+          <NavigationalProperty Id="24bb6627-23c7-4c01-820f-c34061e87b6f" name="AspNetUserLogins" type="IList&lt;AspNetUserLogin&gt;" label="AspNetUserLogins : IList&lt;AspNetUserLogin&gt;" nullable="true" kind="Persistent" fieldName="_aspNetUserLogins" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="889ff971-b225-4130-b5a0-06fb14851c8a">
+          <NavigationalProperty Id="78acefa4-aaf7-415d-b1fc-2d344cf21a77" name="AspNetUserClaims" type="IList&lt;AspNetUserClaim&gt;" label="AspNetUserClaims : IList&lt;AspNetUserClaim&gt;" nullable="true" kind="Persistent" fieldName="_aspNetUserClaims" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+        <classHasNavigationalProperties Id="0589a8e0-12d8-47c6-a705-604b1b8084d5">
+          <NavigationalProperty Id="d49bce7b-185c-4a47-a51b-ab33e5ac6223" name="AspNetRoles" type="IList&lt;AspNetRole&gt;" label="AspNetRoles : IList&lt;AspNetRole&gt;" nullable="true" kind="Persistent" fieldName="_aspNetRoles" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="5b5d3f28-5738-46f8-94f6-35a4c0f50130" name="AspNetUserLogin" namespace="Cimsco.EntityDataModel" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="00dcdabb-fc7e-4d53-b3f5-5e35850a00d5" name="LoginProvider" label="LoginProvider : String" kind="Persistent" identity="true" fieldName="_loginProvider" />
+      <Property Id="23725f47-8959-4996-803b-de2bb5a6c296" name="ProviderKey" label="ProviderKey : String" kind="Persistent" identity="true" fieldName="_providerKey" />
+      <Property Id="8a8ba805-4edc-4778-97e6-33bd8fb7fc3e" name="UserId" label="UserId : String" kind="Persistent" identity="true" fieldName="_userId" />
+      <AssociationTargets>
+        <Association Id="4071d38d-2fd7-428a-9146-9e833ee62bc1" SourceMultiplicity="One" name="AspNetUserLoginHasAspNetUser">
+          <DomainClassMoniker name="/CimscoModel/AspNetUser" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="a5d969e5-62d4-477e-bf68-ef65d094eb69">
+              <NavigationalPropertyMoniker name="/CimscoModel/AspNetUser/AspNetUserLogins" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="ee75b8d2-a9f9-4d89-b8da-c950ed797d77">
+              <NavigationalPropertyMoniker name="/CimscoModel/AspNetUserLogin/AspNetUser" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="f6ca7550-1d8d-439b-8d97-664a875e3726">
+          <NavigationalProperty Id="5ebe14bd-0c91-4219-b2ce-b89e37930976" name="AspNetUser" type="AspNetUser" label="AspNetUser : AspNetUser" nullable="true" kind="Persistent" fieldName="_aspNetUser" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="3a79692f-3aa3-4523-8b4d-37a0dd9d6921" name="AspNetUserClaim" namespace="Cimsco.EntityDataModel" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="Id">
+      <Property Id="3c453a40-f8f4-425a-ab56-d94e9c4bdad6" name="Id" type="Int32" label="Id : Int32" kind="Persistent" identity="true" fieldName="_id" />
+      <Property Id="15485c18-4731-4963-a766-8312c976d8cd" name="ClaimType" label="ClaimType : String" kind="Persistent" fieldName="_claimType" />
+      <Property Id="b7cfaa81-531a-4292-88b4-2108d6e657a6" name="ClaimValue" label="ClaimValue : String" kind="Persistent" fieldName="_claimValue" />
+      <Property Id="4a1523dd-649f-4d64-a001-70dc9d31371c" name="UserId" label="UserId : String" kind="Persistent" fieldName="_userId" />
+      <AssociationTargets>
+        <Association Id="9a24e357-0bf3-4bae-8ed1-0932797eb029" SourceMultiplicity="One" name="AspNetUserClaimHasAspNetUser">
+          <DomainClassMoniker name="/CimscoModel/AspNetUser" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="11f77dd3-b0ec-4f5d-927a-5caea9e4afab">
+              <NavigationalPropertyMoniker name="/CimscoModel/AspNetUser/AspNetUserClaims" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="acdc96c9-977a-4bba-b435-6e24bf5fba9d">
+              <NavigationalPropertyMoniker name="/CimscoModel/AspNetUserClaim/AspNetUser" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="89cfd7e3-7d81-432b-8cca-3ec4a19977ce">
+          <NavigationalProperty Id="98f34268-e16e-4c24-8acb-17881d16cd76" name="AspNetUser" type="AspNetUser" label="AspNetUser : AspNetUser" nullable="true" kind="Persistent" fieldName="_aspNetUser" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="8a66ac02-ba16-4622-9a9e-5dc9588eda4f" name="AspNetRole" namespace="Cimsco.EntityDataModel" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="ea607622-6d1c-4783-a185-0d6cccb73d23" name="Id" label="Id : String" kind="Persistent" identity="true" fieldName="_id" />
+      <Property Id="b1a571b2-a85e-4ceb-9f89-3edb02f69dba" name="Name" label="Name : String" kind="Persistent" fieldName="_name" />
+      <AssociationTargets>
+        <Association Id="6db567e6-c225-4392-872f-c713b71d8322" name="AspNetRolesHaveAspNetUsers">
+          <DomainClassMoniker name="/CimscoModel/AspNetUser" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="2ecfdf88-67b7-49ed-890c-99c97dad823b">
+              <NavigationalPropertyMoniker name="/CimscoModel/AspNetUser/AspNetRoles" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="aa45c6ee-17c0-45dc-a4f5-68623ea47ef5">
+              <NavigationalPropertyMoniker name="/CimscoModel/AspNetRole/AspNetUsers" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="3d8f609b-9777-4aa3-91fa-35953f62a7d7">
+          <NavigationalProperty Id="4486515a-0105-470c-b04c-1a4a92846777" name="AspNetUsers" type="IList&lt;AspNetUser&gt;" label="AspNetUsers : IList&lt;AspNetUser&gt;" nullable="true" kind="Persistent" fieldName="_aspNetUsers" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="6a2d9621-9431-445a-babb-8cd0bfa5b83c" name="__MigrationHistory" namespace="Cimsco.EntityDataModel" showPropertiesCompartment="true" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="5db2fc49-08c6-4b60-9142-32422b930919" name="ContextKey" label="ContextKey : String" kind="Persistent" identity="true" fieldName="_contextKey" />
+      <Property Id="ae9041fc-7e80-416d-8baf-53678dc303a8" name="MigrationId" label="MigrationId : String" kind="Persistent" identity="true" fieldName="_migrationId" />
+      <Property Id="00101d7b-a966-426e-a849-dbdbbec6d7c3" name="Model" type="Byte[]" label="Model : Byte[]" kind="Persistent" fieldName="_model" />
+      <Property Id="16ab99b6-5440-4168-9ecd-e8dab2fe5251" name="ProductVersion" label="ProductVersion : String" kind="Persistent" fieldName="_productVersion" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="b94c448d-7df2-4175-82c2-999d2828711e">
+      <domainContainer name="CimscoModel" namespace="Cimsco.EntityDataModel" showPropertiesCompartment="true">
+        <entitySetProperty name="SummaryData" namespace="Cimsco.EntityDataModel" type="SummaryDatum" label="SummaryData : IQueryable&lt;Cimsco.EntityDataModel.SummaryDatum&gt;" />
+        <entitySetProperty name="AspNetUsers" namespace="Cimsco.EntityDataModel" type="AspNetUser" label="AspNetUsers : IQueryable&lt;Cimsco.EntityDataModel.AspNetUser&gt;" />
+        <entitySetProperty name="AspNetUserLogins" namespace="Cimsco.EntityDataModel" type="AspNetUserLogin" label="AspNetUserLogins : IQueryable&lt;Cimsco.EntityDataModel.AspNetUserLogin&gt;" />
+        <entitySetProperty name="AspNetUserClaims" namespace="Cimsco.EntityDataModel" type="AspNetUserClaim" label="AspNetUserClaims : IQueryable&lt;Cimsco.EntityDataModel.AspNetUserClaim&gt;" />
+        <entitySetProperty name="AspNetRoles" namespace="Cimsco.EntityDataModel" type="AspNetRole" label="AspNetRoles : IQueryable&lt;Cimsco.EntityDataModel.AspNetRole&gt;" />
+        <entitySetProperty name="__MigrationHistories" namespace="Cimsco.EntityDataModel" type="__MigrationHistory" label="__MigrationHistories : IQueryable&lt;Cimsco.EntityDataModel.__MigrationHistory&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>

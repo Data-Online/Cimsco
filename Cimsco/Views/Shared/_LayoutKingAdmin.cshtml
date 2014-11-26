@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9" lang="en" class="no-js"> <![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <title>Dashboard | Cimsco - Admin Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Cimsco Understanding Electricity Costs">
+    <meta name="author" content="Cimsco">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <link href="@Url.Content("~/ejThemes/Default-theme/ej.widgets.all.min.css")" rel="stylesheet" />
+    @*<script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")"></script>*@
+    <script src="@Url.Content("~/Scripts/jsrender.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.easing-1.3.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.globalize.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/ej/ej.web.all.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/ej/ej.unobtrusive.min.js")"></script>
+
+
+
+    <!-- CSS -->
+    <link href="~/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/assets/css/main.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="~/assets/css/cimsco.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- added code to apply skin -->
+    <link href="~/assets/css/skins/slategray.css" rel="stylesheet" type="text/css">
+    <!-- end added code to apply skin -->
+
+    <!--[if lte IE 9]>
+            <link href="~/assets/css/main-ie.css" rel="stylesheet" type="text/css" media="screen" />
+            <link href="~/assets/css/main-ie-part2.css" rel="stylesheet" type="text/css" media="screen" />
+    <![endif]-->
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="~/assets/ico/Cimsco-favicon144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="~/assets/ico/Cimsco-favicon114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="~/assets/ico/Cimsco-favicon72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="~/assets/ico/Cimsco-favicon57x57.png">
+    <link rel="shortcut icon" href="~/assets/ico/favicon.png">
+</head>
+
+<body>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Html.EJ().ScriptManager()
+    @RenderSection("scripts", required: false)
+
+    <!-- Javascript -->
+    @*<script src="~/assets/js/jquery/jquery-2.1.0.min.js"></script>*@
+    @*<script src="~/assets/js/bootstrap/bootstrap.js"></script>
+        <script src="~/assets/js/plugins/modernizr/modernizr.js"></script>*@
+    <script src="~/assets/js/plugins/bootstrap-tour/bootstrap-tour.custom.js"></script>
+    <script src="~/assets/js/king-common.js"></script>
+    <script src="~/assets/js/plugins/stat/jquery.easypiechart.min.js"></script>
+    <script src="~/assets/js/plugins/raphael/raphael-2.1.0.min.js"></script>
+    <script src="~/assets/js/plugins/stat/flot/jquery.flot.min.js"></script>
+    <script src="~/assets/js/plugins/stat/flot/jquery.flot.resize.min.js"></script>
+    <script src="~/assets/js/plugins/stat/flot/jquery.flot.time.min.js"></script>
+    <script src="~/assets/js/plugins/stat/flot/jquery.flot.pie.min.js"></script>
+    <script src="~/assets/js/plugins/stat/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="~/assets/js/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <script src="~/assets/js/plugins/datatable/jquery.dataTables.min.js"></script>
+    <script src="~/assets/js/plugins/datatable/dataTables.bootstrap.js"></script>
+    <script src="~/assets/js/plugins/jquery-mapael/jquery.mapael.js"></script>
+    <script src="~/assets/js/plugins/raphael/maps/usa_states.js"></script>
+    <script src="~/assets/js/king-chart-stat.js"></script>
+    <script src="~/assets/js/king-table.js"></script>
+    <script src="~/assets/js/king-components.js"></script>
+</body>
+</html>
